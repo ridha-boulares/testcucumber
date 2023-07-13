@@ -1,3 +1,3 @@
 module.exports = {
-  default: `--format-options '{"snippetInterface":"synchronous"}'`
+  format: ['progress-bar', 'json:cucumber-report.json', 'html:cucumber-report.html']
 };
