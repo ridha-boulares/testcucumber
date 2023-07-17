@@ -1,3 +1,3 @@
 module.exports = {
-  format: ['progress-bar', 'json:cucumber-report.json', 'html:cucumber-report.html']
+  format: [ 'json:cucumber-report.json']
 };
