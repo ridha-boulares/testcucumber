@@ -1,11 +1,17 @@
 {
   "default": {
     "requireModule": ["ts-node/register"],
-    "require": ["test/features/**/*.js"],
+    "require": ["features/**/*.js"],
     "format": [
       "progress-bar",
-      "json:test/reports/cucumber-report.json",
-      "html:test/reports/cucumber-report.html"
-    ]
+      "rerun:@rerun.txt",
+      "usage:reports/usage.txt",
+      "message:reports/messages.ndjson",
+      "junit:reports/junit.xml",
+      "html:reports/html-formatter.html"
+    ],
+    "retry": 2,
+    "retryTagFilter": "@flaky",
+    "publishQuiet": true
   }
 }
